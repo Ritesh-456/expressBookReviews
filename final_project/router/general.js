@@ -81,7 +81,7 @@ public_users.get('/review/:isbn',function (req, res) {
 // --- Tasks 10-13: Async/Await with Axios ---
 // These functions are client-side examples that fetch data from the server defined above.
 
-// Task 10: Get all books using Async/Await
+// Task 10: Get all books using Async/Await with Axios
 const getAllBooks = async () => {
     try {
         const response = await axios.get("http://localhost:5000/");
@@ -90,6 +90,7 @@ const getAllBooks = async () => {
         console.error(error);
     }
 }
+
 
 // Task 11: Get book by ISBN using Promises
 const getBookByISBN = (isbn) => {
